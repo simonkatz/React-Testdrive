@@ -1,14 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import Task from './Task'
 
 function MainContent () {
     return (
         <div>
-            <ol>
-                <li>This is great 1</li>
-                <li>This is great 2</li>
-                <li>This is great 3</li>
-            </ol>
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
         </div>
     )
 }
