@@ -1,16 +1,11 @@
 import React from 'react'
 
-import Navbar from './Navbar'
-import MainContent from './MainContent'
-import Footer from './Footer'
-
-
-function App() {
+function App () {
     return (
         <div>
-            <Navbar />
-            <MainContent />
-            <Footer />
+            <div><input type='checkbox' /><span>Task A</span></div>
+            <div><input type='checkbox' /><span>Task B</span></div>
+            <div><input type='checkbox' /><span>Task C</span></div>
         </div>
     )
 }
