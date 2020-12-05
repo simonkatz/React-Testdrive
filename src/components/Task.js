@@ -2,7 +2,9 @@ import React from 'react'
 
 function Task () {
 	return (
-		<div><input type="checkbox" />This is a task</div>
+		<div className="task-item">
+			<input type="checkbox" />This is a task
+		</div>
 	)
 }
 
