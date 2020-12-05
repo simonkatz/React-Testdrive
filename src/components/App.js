@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from './Header'
+import MainContent from './MainContent'
+import Footer from './Footer'
 
 function App () {
     return (
         <div>
-            <div><input type='checkbox' /><span>Task A</span></div>
-            <div><input type='checkbox' /><span>Task B</span></div>
-            <div><input type='checkbox' /><span>Task C</span></div>
+            <Header />
+            <MainContent />
+            <Footer />
         </div>
     )
 }

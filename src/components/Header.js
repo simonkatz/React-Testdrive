@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-function Navbar () {
+function Header () {
     return (
-        <div> 
+        <div className="navbar"> 
             What a great navbar
         </div>
     )
 }
-export default Navbar
+export default Header

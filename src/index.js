@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App'
+import './style.css'
 // From scratch, initialize the React app
 // Render an <App /> component
 // Create the <App /> component from scratch
