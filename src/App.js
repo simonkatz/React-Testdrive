@@ -8,6 +8,7 @@ class App extends Component {
             lastName: "",
             age: "",
             gender: "",
+            destination: "",
             isChicken: true,
             isSeafood: false,
             isPork: false
@@ -70,9 +71,11 @@ class App extends Component {
                     <br />
                     
                     <select 
+                        value={this.state.destination}
                         name="destination"
                         onChange={this.handleChange}
                     >
+                        <option value="">-- Please select destination --</option>
                         <option value="Uganda">Uganda</option>
                         <option value="Rwanda">Rwanda</option>
                         <option value="Kenya">Kenya</option>
