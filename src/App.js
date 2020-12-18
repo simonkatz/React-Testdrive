@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import { Button } from '@duik/it'
 
 class App extends Component {
     constructor() {
