@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import { Button } from '@duik/it'
+import { FormGroupContainer, FormGroup, TextField, Radio } from '@duik/it'
 
 class App extends Component {
     constructor() {
@@ -32,45 +32,51 @@ class App extends Component {
     render() {
         return (
             <main>
-                <form>
+                <form onSubmit={e => e.preventDefault()}>
+	                <FormGroupContainer>
+					    <FormGroupContainer>
+					      	<FormGroup>
+						        <TextField 
+						        	label="First Name" 
+						        	name="firstName" 
+			                        value={this.state.firstName} 
+			                        onChange={this.handleChange}
+			                    />
+						        <TextField 
+						        	label="Last Name"
+						        	name="lastName"
+						        	value={this.state.lastName}
+						        	onChange={this.handleChange} 
+						        />
+					        	<TextField
+					        		label="Age"
+					        		name="age"
+					        		value={this.state.age}
+					        		onChange={this.handleChange}
+					        	/>
+					        	<label block>Gender</label>
+					        	<Radio
+					        		label="Male"
+					        		name="gender"
+					        		value="male"
+					        		checked={this.state.gender === 'male'}
+					        		onChange={this.handleChange}
+					        	/>
+					        	<Radio
+					        		label="Female"
+					        		name="gender"
+					        		value="female"
+					        		checked={this.state.gender === 'female'}
+					        		onChange={this.handleChange}
+					        	/>
+					      	</FormGroup>
+					    </FormGroupContainer>
+					</FormGroupContainer>
                     <input 
-                        name="firstName" 
-                        value={this.state.firstName} 
-                        placeholder="First Name" 
-                        onChange={this.handleChange}
+                        
                     />
-                    <br />
-                    <input 
-                        name="lastName" 
-                        value={this.state.lastName} 
-                        placeholder="Last Name" 
-                        onChange={this.handleChange}
-                    />
-                    <br />
-                    <input 
-                        name="age" 
-                        value={this.state.age} 
-                        placeholder="Age" 
-                        onChange={this.handleChange}
-                    />
-                    <br />
-                    <label>Gender</label>
-                    <input 
-                        type="radio"
-                        name="gender"
-                        value="male"
-                        checked={this.state.gender === "male" }
-                        onChange={this.handleChange}
-                    /> Male
-                    <input 
-                        type="radio"
-                        name="gender"
-                        value="female"
-                        checked={this.state.gender === "female" }
-                        onChange={this.handleChange}
-                    /> Female
-                    <br />
-                    
+                     <br />
+
                     <select 
                         value={this.state.destination}
                         name="destination"
